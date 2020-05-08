@@ -1,2 +1,16 @@
 <!--index.wxml-->
-<text class="title">hello word</text>
+
+<!--Mustache-->
+<!-- 1.小程序数据绑定 -->
+<view>hello {{name}}</view>
+<view>梁非凡的年龄:{{age + 20}}</view>
+<view>这里的name和age的数据是调用index.js里的data里的数据</view>
+<!-- 2.列表展示 -->
+<view>{{players[0].name}}</view>
+<!-- 对players进行遍历输出 -->
+<view wx:for="{{players}}">{{item.name}},{{item.age}},{{item.id}}</view>
+<!-- 3.事件监听 -->
+<view>当前计数：{{counter}}</view>
+<!-- bindtap 触发事件 -->
+<button size="mini" bindtap="andCounter">+</button>
+<button size="mini" bindtap="reduceCounter">-</button>
