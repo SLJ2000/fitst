@@ -1,2 +1,5 @@
 <!--index.wxml-->
 <text class="title">hello word</text>
+<view class="title">
+wtf</view>
+<view>2.知识点2</view>
