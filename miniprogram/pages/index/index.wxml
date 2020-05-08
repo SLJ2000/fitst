@@ -2,4 +2,23 @@
 <text class="title">hello word</text>
 <view class="title">
 wtf</view>
-<view>2.知识点2</view>
+<view>2.知识点23/view>
+<view>Git comme
+git remote add origin https://github.com/SLJ2000/fitst.git --关联云仓库
+git push -u origin master
+
+写完代码执行以下操作
+git add . --添加新的本地文件到暂缓区
+git commit -m "知识点1" --提交到仓库，命名
+ git tag 01_知识点1   --标签
+git tag 查看所有tag
+git push --tags     !--上传TAG到Github
+
+git log    --查看提交记录
+git reset 9a46eac59  --退回  
+git reset --hard 9a46eac59 --强制退回
+git clone "URL" 克隆 然后微信小程序导入项目
+git status  --查看是否有文件可以提交，或未被git追踪的文件
+git checkout 01_知识点1   --回到知识点1的代码
+
+</view>
