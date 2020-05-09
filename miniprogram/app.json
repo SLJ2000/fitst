@@ -5,12 +5,32 @@
     "pages/second/second"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "23栋6楼",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+    
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "photo/icon_kxrncf6cy1/shouye.png",
+      "selectedIconPath": "photo/icon_kxrncf6cy1/2.png"
+    },{
+      "pagePath": "pages/second/second",
+      "text": "功能",
+      "iconPath": "photo/icon_kxrncf6cy1/gongneng.png",
+      "selectedIconPath": "photo/icon_kxrncf6cy1/1.png"
+    }
+
+  
+  
+  ]
+  }
 }
