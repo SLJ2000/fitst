@@ -1,7 +1,9 @@
 //app.js
 App({
+  // 小程序再后台存活两个小时，如果超过时间，会重新初始化
+  // 小程序初始化完成调用onLaunch
   onLaunch: function () {
-    
+    console.log('小程序初始化完成!')
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
@@ -16,5 +18,21 @@ App({
     }
 
     this.globalData = {}
+    // 获取用户信息
+    wx.getUserInfo({
+      complete: (res) => {
+        console.log(res)
+      },
+    })
+  },
+  // 小程序界面加载时显示
+  onShow:function(){
+    console.log('界面显示出来时调用onShow')
+  },
+  onHide:function(){
+    console.log('小程序关闭时调用')
+  },
+  onError:function(){
+    console.log('小程序发生错误时执行')
   }
 })
