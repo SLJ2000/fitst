@@ -1,2 +1,4 @@
 <!--index.wxml-->
 <text class="title">hello word</text>
+<view wx:for="{{list}}">{{item.name}}</view>
+<view bindtap="click">{{message}}</view>
