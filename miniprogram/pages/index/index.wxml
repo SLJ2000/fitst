@@ -2,3 +2,6 @@
 <text class="title">hello word</text>
 <view wx:for="{{list}}">{{item.name}}</view>
 <view bindtap="click">{{message}}</view>
+<!-- text -->
+<!-- selectable选择文本，默认FALSE -->
+<text selectable="ture">这是第一行\n</text>

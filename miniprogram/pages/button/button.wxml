@@ -1,0 +1,15 @@
+<!--pages/button/button.wxml-->
+<!-- button的基本使用方法 -->
+<button>按钮</button>
+<button size='mini'>小按钮</button>
+<!-- type 属性 -->
+<button size='mini' type="primary">小按钮</button>
+<button size='mini' type="default">小按钮</button>
+<button size='mini' type="warn">小按钮</button>
+<!-- plain镂空效果 -->
+<button size='mini' plain>小按钮</button>
+<button size='mini' type="warn" plain>小按钮</button>
+<!-- hover-class -->
+<button hover-class="hover">小按钮</button>
+
+ 
