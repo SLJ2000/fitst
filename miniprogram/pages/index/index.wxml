@@ -1,2 +1,11 @@
 <!--index.wxml-->
-<text class="title">hello word</text>
+<!-- 获取相册中的图片 -->
+<button bindtap="handleChooseAlbum">选中图片</button>
+<image src="{{imagePath}}"></image>
+<!-- bindload ：监听图片加载完成 -->
+<image bindload="handImageload" src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1589512437&di=159042191ea791a275df0ba3ee11bea0&src=http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg"></image>
+<!-- lazy-load :慢加载-->
+<image lazy-load="{{true}}" bindload="handImageload" wx:for="{{8}}" src="http://photogz.photo.store.qq.com/psc?/V10ES2An3ljGHE/u0qUMsilGdkhXscKj.lHLhSX3utRNdY6hpWq13yYD.DZgJHntbHzMyvhx8YEBuT7qVRmem0q5tzH.qqPQy.vFw!!/b&bo=QAaADEAGgAwRECc!&rf=viewer_311"/>
+<!-- 长按图片出现识别小程序菜单 -->
+<image mode="widthFix" show-menu-by-longpress src="http://photogz.photo.store.qq.com/psc?/V10ES2An3ljGHE/u0qUMsilGdkhXscKj.lHLhSX3utRNdY6hpWq13yYD.DZgJHntbHzMyvhx8YEBuT7qVRmem0q5tzH.qqPQy.vFw!!/b&bo=QAaADEAGgAwRECc!&rf=viewer_311"/>
+

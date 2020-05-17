@@ -7,7 +7,25 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    imagePath:''
+  },
+  handleChooseAlbum(){
+    wx.chooseImage({
+      complete: (res) => {
+        console.log(res)
+        // 取出路径
+        const path=res.tempFilePaths[0]
+        // 设置imagepath
+        this.setData({
+          imagePath:path
+        })
+      },
+    })
+  
+  },
+  handImageload(){
+    console.log('图片加载完成')
   },
 
   onLoad: function() {

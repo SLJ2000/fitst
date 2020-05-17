@@ -1,0 +1,17 @@
+<!--pages/view/view.wxml-->
+<!-- VIEW类似于容器，DIV，view独占一行 -->
+
+<view>
+  <text></text>
+  <button></button>
+</view>
+<!-- hover-stop-propagation是阻止父类的动态事件  -->
+<view hover-class="hover">click</view>
+<view class="box1" hover-class="box1-hover">
+  <view class="box2" hover-class="box2-hover" 
+  hover-stop-propagation="{{true}}">
+  点击
+  
+  </view>
+
+</view>
