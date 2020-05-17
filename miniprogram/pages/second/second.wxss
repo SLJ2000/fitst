@@ -1,1 +1,26 @@
 /* miniprogram/pages/second/second.wxss */
+.item1{
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: inline-block;
+}
+.rongqi1{
+  background-color: rosybrown;
+  /* 禁止换行 */
+  white-space: nowrap ;
+}
+.item2{
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  
+}
+.rongqi2{
+  height: 300px;
+  background-color: rosybrown;
+  /* 禁止换行 */
+  white-space: nowrap ;
+}

@@ -1,2 +1,8 @@
 <!--miniprogram/pages/second/second.wxml-->
-<text>miniprogram/pages/second/second.wxml</text>
+<!-- 局部滚动-水平滚动 -->
+<scroll-view class="rongqi1" scroll-x>
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+<scroll-view class="rongqi2" scroll-y>
+  <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>

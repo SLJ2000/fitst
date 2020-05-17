@@ -1,2 +1,15 @@
 <!--index.wxml-->
-<text class="title">hello word</text>
+<text class="title">input操作</text>
+<input></input>
+<input value="111"></input>
+<input type="number"></input>
+<input password="true"></input>
+<!-- placeholder 占位文字 -->
+<input placeholder="请输入"></input>
+<input confirm-type="search" value="{{masege}}"></input>
+<!-- 绑定事件 -->
+<input bindinput="handleinput"
+      bindfocus="handlefocus"
+      bindblur="handleblur"
+></input>
+

@@ -7,7 +7,22 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    masege:''
+  },
+  handleinput(event){
+    console.log('用户输入内容',event)
+  },
+  handlefocus(event){
+    console.log('获取焦点',event)
+  },
+  handleblur(event){
+    console.log('失去焦点',event)
+    const data=event.detail.value;
+    this.setData({
+      masege:data
+    })
+    
   },
 
   onLoad: function() {
