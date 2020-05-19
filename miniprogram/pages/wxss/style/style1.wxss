@@ -1,0 +1,6 @@
+.box3{
+  display: inline;
+  background-color: red;
+  width: 200rpx ;
+  height: 200rpx;
+}

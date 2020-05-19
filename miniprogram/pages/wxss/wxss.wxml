@@ -1,0 +1,21 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- 设置样式的三种样式 -->
+<!-- 行内（内联）样式 -->
+<view style="font-size:26px; color:red">哈哈哈</view>
+<!-- y页内样式 -->
+<view class="box1">哈哈哈</view>
+<!-- 全局样式APP.WXSS -->
+<view class="box1">哈哈哈</view>
+<!-- wxss中的单位, rpx -->
+<!-- 前段也需要进行配置尺寸的适配 -->
+<view class="box2"></view>
+<view class="box3"></view>
+<!-- 模板 -->
+<template name="contentitem">
+  <view>{{index}},{{content}},{{time}}</view>
+</template>
+<!-- 使用模板 -->
+<template is="contentitem" data="{{index:0,content:'干',time:'2018-10-09'}}"/>
+<view>-----------</view>
+ <import src="../template.wxml"/>
+<template is="haha" data="{{index:0,content:'haha',time:'2018-10-09'}}"/>

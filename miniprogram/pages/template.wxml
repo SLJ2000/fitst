@@ -1,0 +1,3 @@
+<template name="haha">
+  <view>{{index}},{{content}},{{time}}</view>
+</template>

@@ -5,7 +5,10 @@
   align-items: center;
   box-sizing: border-box;
 } 
-
+.box2{
+  color: bisque;
+  font-size: 46px;
+}
 button {
   background: initial;
 }

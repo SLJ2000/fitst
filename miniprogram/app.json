@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/wxss/wxss",
     "pages/index/index",
-    
     "pages/second/second"
+    
   ],
   "window": {
     "backgroundColor": "#fff",
@@ -11,26 +12,24 @@
     "navigationBarTitleText": "23栋6楼",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
-    
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "tabBar": {
     "selectedColor": "#d81e06",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "photo/icon_kxrncf6cy1/shouye.png",
-      "selectedIconPath": "photo/icon_kxrncf6cy1/2.png"
-    },{
-      "pagePath": "pages/second/second",
-      "text": "功能",
-      "iconPath": "photo/icon_kxrncf6cy1/gongneng.png",
-      "selectedIconPath": "photo/icon_kxrncf6cy1/1.png"
-    }
-
-  
-  
-  ]
+    "list": [
+      {
+        "pagePath": "pages/wxss/wxss",
+        "text": "首页",
+        "iconPath": "photo/icon_kxrncf6cy1/shouye.png",
+        "selectedIconPath": "photo/icon_kxrncf6cy1/2.png"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "text": "功能",
+        "iconPath": "photo/icon_kxrncf6cy1/gongneng.png",
+        "selectedIconPath": "photo/icon_kxrncf6cy1/1.png"
+      }
+    ]
   }
 }
