@@ -1,2 +1,29 @@
 <!--index.wxml-->
 <text class="title">hello word</text>
+
+<!-- 常用事件 -->
+<view class="box"
+      bind:touchstart="handleTouchStart"
+      bind:touchmove="handleTouchMove"
+      bind:touchend="handleTouchEnd"
+      bind:tap="handleTap"
+      bind:longpress="handleLongPress"
+      ></view>
+
+      <!-- 组件属性 -->
+      <view class="box1" id="out" bindtap="outer">
+      外层view
+            <view class="box2" id="in" bindtap="inner">
+            内层view</view>
+        </view>
+
+    <!-- 参数传递 -->
+    <view class="no">
+    <block wx:for="{{titles}}" wx:key="{{index}}">
+      <view class="item" 
+      bindtap="handleitemclick"
+      data-index="{{index}}"
+      data-item="{{item}}"
+      >{{item}}</view>
+    </block>
+    </view>
