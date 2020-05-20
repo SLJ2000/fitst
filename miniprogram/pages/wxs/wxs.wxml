@@ -1,0 +1,28 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+<!-- 在WXML中定义 -->
+<!-- <wxs module="info">
+//js代码
+var message = "hello word";
+var sum = function(num1,num2){
+  return num1+num2
+}
+//commonjs的模块化导出的写法
+module.exports={
+  message: message,
+  sum: sum
+}
+</wxs> -->
+
+<!-- 在单独的WXS文件定义 再使用<WXS标签导入> -->
+<!-- 只能使用相对路径 -->
+<wxs src="./info.wxs" module="info"/>
+
+<view>{{info.message}}</view>
+<view>{{info.sum(10,12)}}</view>
+<!-- WXS的应用 -->
+<wxs src="../../wxs/wxs.wxs" module="wxs"/>
+<view>{{wxs.priceformat(price)}}</view>
+
+ 
+
