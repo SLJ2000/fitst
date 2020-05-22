@@ -32,7 +32,25 @@ Page({
     const title = dataset.item
     const index = dataset.index
     console.log(index,title)
-  }
-
+  },
+  // 事件冒泡和事件捕获
+  handlecaptureview1(){
+    console.log('handlecaptureview1')
+  },
+  handlebindview1(){
+    console.log('handlebindview1')
+  },
+  handlecaptureview2(){
+    console.log('handlecaptureview2')
+  },
+  handlebindview2(){
+    console.log('handlebindview2')
+  },
+  handlecaptureview3(){
+    console.log('handlecaptureview3')
+  },
+  handlebindview3(){
+    console.log('handlebindview3')
+  },
 
 })
