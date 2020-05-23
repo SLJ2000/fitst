@@ -1,0 +1,8 @@
+/* components/my-prop/my-prop.wxss */
+.view1{
+  font-size: 30px;
+
+}
+.view2{
+  font-size: 20px;
+}

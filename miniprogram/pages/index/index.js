@@ -7,7 +7,15 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    num:0
+  },
+  handleincrement(event){
+    console.log(event)
+    this.setData({
+      num:this.data.num+1
+    })
+
   },
 
   onLoad: function() {
