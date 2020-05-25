@@ -1,2 +1,8 @@
 <!--index.wxml-->
 <text class="title">hello word</text>
+<my-tab titles="{{['衣服','鞋子','裤子']}}" bind:itemclick="handletabclick"/>
+<text>{{value}}</text>
+<!-- 通过SETDATA修改组件中的数据 -->
+<button bindtap="handleclick">增加10</button>
+<my-sel class="insert"/>
+<button bindtap="handleclick20">增加20</button>

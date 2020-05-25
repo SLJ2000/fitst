@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-tab":"../../components/my-tab/my-tab",
+    "my-sel":"../../components/my-sel/my-sel"
+  }
 }
