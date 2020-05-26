@@ -1,0 +1,4 @@
+<!--components/chatroom/my-slot/my-slot.wxml-->
+<view>---------</view>
+<slot/>
+<view>---------</view>

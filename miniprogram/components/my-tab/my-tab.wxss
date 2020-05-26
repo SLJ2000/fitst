@@ -1,0 +1,21 @@
+/* components/my-tab/my-tab.wxss */
+.box{
+  height: 80rpx;
+  display: flex;
+  line-height: 80rpx;
+  background-color: salmon;
+}
+.item{
+  color: red;
+  flex:1;
+  text-align: center;
+  
+}
+.active{
+  color: black;
+ 
+}
+.active text{
+  padding-bottom: 5px;
+  border-bottom: black 2px solid;
+}

@@ -7,7 +7,34 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    value:''
+  },
+  handletabclick(event){
+    console.log(event)
+    this.setData({
+      value:event.detail.title
+    })
+  },
+  handleclick(){
+    const my_sel = this.selectComponent('.insert')
+    // 直接修改组件中的DATA数据(不合理)
+    my_sel.setData({
+      number :my_sel.data.number + 10
+    })
+    
+    
+
+  },
+  handleclick20(){
+    const my_sel = this.selectComponent('.insert')
+   
+    // 通过方法来修改数据
+    my_sel.incrementnumber(20)
+
+  },
+  handleclick1(event){
+    console.log(event)
   },
 
   onLoad: function() {

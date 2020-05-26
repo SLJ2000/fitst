@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-tab":"../../components/my-tab/my-tab",
+    "my-sel":"../../components/my-sel/my-sel",
+    "my-mslot":"../../components/my-mslot/my-mslot",
+
+    "my-slot":"../../components/my-slot/my-slot"
+  }
 }
