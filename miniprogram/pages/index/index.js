@@ -8,7 +8,8 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: '',
-    value:''
+    value:'',
+    isShow:true
   },
   handletabclick(event){
     console.log(event)
@@ -36,7 +37,11 @@ Page({
   handleclick1(event){
     console.log(event)
   },
-
+  handlechangeshow(){
+    this.setData({
+      isShow:!this.data.isShow
+    })
+  },
   onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({

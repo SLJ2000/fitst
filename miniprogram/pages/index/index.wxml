@@ -17,3 +17,12 @@
 <my-mslot>
 <button slot="slot3" size="mini" bindtap="handleclick1">小按钮</button>
 </my-mslot>
+
+<!-- 组件移除 -->
+<button bindtap="handlechangeshow">组件显示切换</button>
+<block wx:if="{{isShow}}">
+  <my-mslot >
+  <button slot="slot3" size="mini" bindtap="handleclick1">小按钮</button>
+  </my-mslot>
+</block>
+
