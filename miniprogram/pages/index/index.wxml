@@ -1,2 +1,13 @@
-<!--index.wxml-->
-<text class="title">hello word</text>
+<view>弹窗</view>
+<button size="mini" bindtap="handleclickLOADING">LOADING按钮
+
+</button>
+
+
+<button size="mini" bindtap="handleclick">TOAST按钮
+
+</button>
+<button size="mini" bindtap="handleclickmoal">MODAL按钮
+</button>
+<button size="mini" bindtap="handleclickactionsheet">actionsheet按钮
+</button>

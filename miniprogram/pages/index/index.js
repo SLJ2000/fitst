@@ -9,6 +9,69 @@ Page({
     takeSession: false,
     requestResult: ''
   },
+  onShareAppMessage:function(){
+    return{
+      title:'震惊！父亲居然当着女儿的面做这种动作！',
+      path:'../second/second'
+      
+    }
+  },
+  handleclick(){
+    wx.showToast({
+      title: '完成',
+      duration:2000,
+      mask:true,
+      success:function(){
+        console.log('展示成功')
+      }
+      
+    })
+  },
+  handleclickactionsheet(){
+    wx.showActionSheet({
+      itemList:['相册','拍照'] ,
+      success:(result)=>{
+        console.log(result)
+        if(result.tapIndex==0){
+          console.log('相册')
+        }
+        if(result.tapIndex==1){
+          console.log('拍照')
+        }
+      }
+    })
+  },
+  handleclickLOADING(){
+    wx.showLoading({
+      title: '加载中ing',
+     
+      mask: true,
+      
+    })
+    setTimeout(()=>{
+      // 必须手动
+      wx.hideLoading()
+    },2000)
+  
+  },
+
+  handleclickmoal(){
+    wx.showModal({
+      // showCancel:false,
+      cancelText:'退出',
+      success: (result) => {
+        console.log(result)
+        if(result.cancel){
+          console.log('取消')
+        }
+        if(result.confirm){
+          console.log('确定')
+        }
+      },
+      title: '标题',
+      content:'内容'
+    })
+  },
 
   onLoad: function() {
     if (!wx.cloud) {
