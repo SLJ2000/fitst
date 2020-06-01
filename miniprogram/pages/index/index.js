@@ -4,6 +4,7 @@ const DB = wx.cloud.database().collection("list")
 
 Page({
   data: {
+    
    name:'',
    age:''
   },
