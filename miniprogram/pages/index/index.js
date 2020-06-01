@@ -7,7 +7,13 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+    title:'呵呵呵'
+  },
+  handlepushtest(){
+    wx.navigateTo({
+      url: '../test/test?tltle="哈哈"',
+    })
   },
 
   onLoad: function() {

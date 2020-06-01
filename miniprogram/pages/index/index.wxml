@@ -1,2 +1,29 @@
 <!--index.wxml-->
-<text class="title">hello word</text>
+
+<!-- navigator页面跳转 -->
+<navigator url="../test/test">跳转详情页</navigator>
+
+<!-- 属性：open-type -->
+<navigator url="../test/test"
+            open-type="redirect">
+            跳转详情页（redirect）
+            
+            </navigator>
+<navigator url="../second/second"
+            open-type="switchTab">
+            跳转功能页（switchTab）
+            
+            </navigator>
+<navigator url="../test/test"
+            open-type="reLaunch">
+            跳转详情页（reLaunch）
+            
+            </navigator>
+<view class="title">navigator传数据</view>
+<navigator url="../test/test?name='wangwu'&age='18'">
+            
+            跳转详情页（reLaunch）
+            
+            </navigator>
+<view>{{title}}</view>
+<button size="mini" bindtap="handlepushtest">按钮跳转</button>

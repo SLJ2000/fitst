@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<navigator url="../test1/test1">跳转test1页</navigator>
+<view>修改index的呵呵呵</view>
+<button size="mini" bindtap="handleBack">返回</button>
