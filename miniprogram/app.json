@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    
+    "pages/myself/myself",
+    "pages/notice/notice",
     "pages/second/second"
   ],
   "window": {
@@ -27,6 +28,16 @@
       "text": "功能",
       "iconPath": "photo/icon_kxrncf6cy1/gongneng.png",
       "selectedIconPath": "photo/icon_kxrncf6cy1/1.png"
+    },{
+      "pagePath": "pages/notice/notice",
+      "text": "消息",
+      "iconPath": "photo/icon_kxrncf6cy1/notice.png",
+      "selectedIconPath": "photo/icon_kxrncf6cy1/selectnotice.png"
+    },{
+      "pagePath": "pages/myself/myself",
+      "text": "我",
+      "iconPath": "photo/icon_kxrncf6cy1/myself.png",
+      "selectedIconPath": "photo/icon_kxrncf6cy1/selmyself.png"
     }
 
   

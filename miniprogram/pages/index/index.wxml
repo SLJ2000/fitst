@@ -1,2 +1,6 @@
-<!--index.wxml-->
-<text class="title">hello word</text>
+<button bindtap="handleclick">添加数据</button>
+<input  type="text" placeholder="年龄"></input>
+<input  type="text" placeholder="姓名"></input>
+<button bindtap="handlesendinput">发送</button>
+<text>{{age}}</text>
+<text>{{name}}</text>
