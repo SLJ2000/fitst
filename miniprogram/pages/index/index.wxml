@@ -1,6 +1,10 @@
 <button bindtap="handleclick">添加数据</button>
-<input  type="text" placeholder="年龄"></input>
-<input  type="text" placeholder="姓名"></input>
+<input  type="text" name="age" placeholder="年龄"
+  bindblur="handleage">
+
+</input>
+<input  type="text" name="name" placeholder="姓名"
+bindblur="handlename"></input>
 <button bindtap="handlesendinput">发送</button>
 <text>{{age}}</text>
 <text>{{name}}</text>
