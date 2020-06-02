@@ -1,10 +1,25 @@
 <button bindtap="handleclick">添加数据</button>
 <input  type="text" name="age" placeholder="年龄"
   bindblur="handleage">
-
 </input>
 <input  type="text" name="name" placeholder="姓名"
 bindblur="handlename"></input>
 <button bindtap="handlesendinput">发送</button>
 <text>{{age}}</text>
 <text>{{name}}</text>
+
+<view class="title">查询数据</view>
+<button bindtap="handleselect">查询</button>
+
+<view class="title">删除数据</view>
+<input bindblur="handleid" placeholder="输入删除的ID"></input>
+<button bindtap="deldata">删除</button>
+
+<view class="title">更新</view>
+<input  type="text" name="age" placeholder="年龄"
+  bindblur="updhandleage">
+</input>
+<input  type="text" name="name" placeholder="姓名"
+bindblur="updhandlename"></input>
+<input bindblur="updhandleid" placeholder="输入更新的ID"></input>
+<button bindtap="updata">更新</button>
