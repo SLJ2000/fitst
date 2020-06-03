@@ -23,3 +23,9 @@ bindblur="handlename"></input>
 bindblur="updhandlename"></input>
 <input bindblur="updhandleid" placeholder="输入更新的ID"></input>
 <button bindtap="updata">更新</button>
+
+<view class="title">云函数</view>
+<button bindtap="cloudfunction">云函数加法</button>
+<button bindtap="getuseropendid">获取用户OPENDID</button>
+<view class="title">云函数获取数据库数据</view>
+<button bindtap="yunhanshuget">云函数获取数据库数据</button>

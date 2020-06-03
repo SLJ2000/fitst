@@ -9,6 +9,47 @@ Page({
    age:'',
    id:''
   },
+  // 云函数获取数据库数据
+  yunhanshuget(){
+    wx.cloud.callFunction({
+      name:"shujukuget",
+      success(res){
+        console.log('获取成功',res)
+      },
+      fail(res){
+        console.log('获取失败',res)
+      }
+    })
+  },
+  // 云函数获取用户OPENDID
+  getuseropendid(){
+    wx.cloud.callFunction({
+     name:"getopendid",
+      success(res){
+        console.log('获取成功',res.result.openid)
+      },
+      fail(res){
+        console.log('获取失败',res)
+      }
+    })
+  },
+  // 云函数加法
+  cloudfunction(){
+    wx.cloud.callFunction({
+      name:"add",
+      data:{
+        a: 1,
+        b: 2
+      },
+      success(res){
+        console.log('调用成功',res)
+      },
+      fail(res){
+        console.log('调用失败',res)
+      }
+    })
+
+  },
   // 更新
   updhandleage(event){
     console.log(event),
